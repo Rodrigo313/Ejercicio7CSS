@@ -1,0 +1,80 @@
+
+
+header {
+    background-color: grey;
+    margin: 10px;
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+    font-size: xx-large;
+    color: white
+}
+main {
+    width: 65%;
+    float: right;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    
+}
+aside{
+    width: 500px;
+    text-align: center;
+    float: left;
+    clear: left;
+    max-height: 300px;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+footer{
+    background-color: grey;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    color: white
+}
+#container{
+    overflow: hidden;
+    width: 100%;
+    max-width: 1900px;
+}
+
+#seccion1{
+    border: 2px solid blue;
+    padding: 10px;
+    float: left;
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    margin: 5px;
+}
+#seccion2{
+    border: 2px solid blue;
+    float: left;
+    overflow: hidden;
+    width: 30%;
+    height: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+#seccion3{
+    border: 2px solid blue;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+}
+h1{
+    margin: 10px;
+    padding: 10px;
+}
+p{
+    text-align: center;
+    text-align: justify;
+    margin: 10px;
+}
