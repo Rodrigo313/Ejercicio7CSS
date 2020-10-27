@@ -19,7 +19,7 @@ main {
     
 }
 aside{
-    width: 500px;
+    width: 300px;
     text-align: center;
     float: left;
     clear: left;
@@ -63,7 +63,7 @@ footer{
 #seccion3{
     border: 2px solid blue;
     height: 100%;
-    float: left;
+    float: right;
     overflow: hidden;
     width: 30%;
     padding: 10px;
