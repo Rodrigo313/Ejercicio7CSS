@@ -8,12 +8,11 @@ header {
     overflow: hidden;
     font-size: xx-large;
     color: white;
-    display: flex;
-    flex-direction: column;
 }
 
 @media screen and (min-width:768px){
-    header{
+    #contenedorPrincipal{
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
