@@ -1,90 +1,88 @@
-
-
-header {
-    background-color: grey;
-    margin: 10px;
+header, footer{
+    border: 1px solid black;
     text-align: center;
-    padding: 30px;
     overflow: hidden;
-    font-size: xx-large;
-    color: white;
 }
 
-@media screen and (min-width:768px){
-    #contenedorPrincipal{
+#seccion1, #seccion2, #seccion3{
+    border: 2px solid blue;
+}
+
+
+
+@media screen and (min-width:768px) {
+    header {
+        margin: 10px;
+        padding: 20px;
+        order: 0;
+    }
+    section {
+        margin: auto;
+        width: 31%;
+        overflow: hidden;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid black;
+    }
+    footer {
+        order: 3;
+        clear: both;
+        margin: 10px;
+        padding: 20px;
+    }
+    p {
+        text-align: center;
+        overflow: hidden;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    #contenedorPrincipal {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .asides {
+        display: flex;
+        flex-direction: column;
+    }
+    aside {
+        display: flex;
+    }
+    main {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
 }
 
-main {
-    width: 65%;
-    float: right;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    overflow: hidden;
-    
-}
-aside{
-    width: 400px;
-    text-align: center;
-    float: left;
-    clear: left;
-    max-height: 300px;
-    margin: 10px;
-    padding: 10px;
-    overflow: hidden;
-}
-footer{
-    background-color: grey;
-    margin: 10px;
-    text-align: center;
-    padding: 10px;
-    clear: both;
-    color: white
-}
-#container{
-    overflow: hidden;
-    width: 100%;
-    max-width: 1900px;
-    min-width: 1900px;
-}
-
-#seccion1{
-    border: 2px solid blue;
-    padding: 10px;
-    float: left;
-    overflow: hidden;
-    width: 30%;
-    height: 100%;
-    margin: 5px;
-}
-#seccion2{
-    border: 2px solid blue;
-    float: left;
-    overflow: hidden;
-    width: 30%;
-    height: 100%;
-    padding: 10px;
-    margin: 5px;
-}
-#seccion3{
-    border: 2px solid blue;
-    height: 100%;
-    float: right;
-    overflow: hidden;
-    width: 30%;
-    padding: 10px;
-    margin: 5px;
-}
-h1{
-    margin: 10px;
-    padding: 10px;
-}
-p{
-    text-align: center;
-    text-align: justify;
-    margin: 10px;
+@media screen and (max-width:768px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        order: 1;
+        display: flex;
+        justify-content: end;
+        margin: 10%;
+        text-align: center;
+        flex-direction: row;
+    }
+    .asides {
+        display: flex;
+        flex-direction: row;
+        order: 2;
+    }
+    .asides aside {
+        display: flex;
+        padding: 22px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        max-width: 33%;
+        justify-content: center;
+    }
 }
